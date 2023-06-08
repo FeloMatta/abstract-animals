@@ -5,6 +5,16 @@ public abstract class Animal {
         System.out.println("Zzz");
     }
 
+    public void printAnimal(){
+        System.out.println("Animal: " + this.getClass().getSimpleName());
+        System.out.print("Noise: ");
+        noise();
+        System.out.print("Eat: ");
+        eat();
+        System.out.println("Sleep");
+        sleep();
+    }
+
     public abstract void noise();
     public abstract void eat();
 
